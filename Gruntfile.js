@@ -55,6 +55,7 @@ module.exports = function (grunt) {
                 dest: 'lib/locales.js',
 
                 options: {
+                    locales: ["en","en-GB","en-US","de","de-DE","de-CH","de-AT","fr-FR","fr-CH","it"],
                     prelude: [
                         '// GENERATED FILE',
                         'var ReactIntl = require("./react-intl");\n\n'
@@ -67,6 +68,7 @@ module.exports = function (grunt) {
             },
 
             dist_all: {
+                locales: ["en","en-GB","en-US","de","de-DE","de-CH","de-AT","fr-FR","fr-CH","it"],
                 dest: 'dist/locale-data/',
 
                 options: {
